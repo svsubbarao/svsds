@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Energy Consumption</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Energy Consumption">
+  <meta name="author" content="Subbarao">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Energy Consumption</h1>
+    <h2></h2>
+    <p>Subbarao<br/>R student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Description</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The Shiny App I wrote displays energy consumption information:</p>
+
+<ul>
+<li>gas</li>
+<li>electricity</li>
+<li>water</li>
+</ul>
+
+<p>for the years 2012 to 2015.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Details</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Every Sunday, I write down in an Excel sheet the figures displayed by the
+different meters.</p>
+
+<p>These data are diffed, week by week, so that I get the week&#39;s consumption.</p>
+
+<p>Further more, a formula is applied to compute an estimate price (expressed in
+EUR) for the week&#39;s consumption.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Here are the first 10 lines of the Excel file (for the columns which interest
+me, the ones I show in the barplot):</p>
+
+<pre><code>##          Date PriceGas PriceElec PriceWater
+## 1  2012-01-01    55.51     22.14       2.96
+## 2  2012-01-08    57.22     23.67       3.30
+## 3  2012-01-15    62.07     23.29       3.26
+## 4  2012-01-22    56.59     23.67       3.02
+## 5  2012-01-29    63.63     23.86       3.12
+## 6  2012-02-05    83.32     24.43       4.61
+## 7  2012-02-12    83.80     25.39       5.03
+## 8  2012-02-19    59.13     23.29       5.62
+## 9  2012-02-26    54.13     21.00       5.40
+## 10 2012-03-04    40.49     21.38       3.66
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Lessons learned</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Necessary to use reactive function as soon as I have 2 inputs or more.</p></li>
+<li><p>In the renderPlot function, the name of the dataframe must be followed by
+parentheses.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Conclusion</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Writing the application + these slides took me around 3 hours.
+That&#39;s pretty excellent for making such a huge work available (displayable,
+testable) by third parties.  A wonder, in fact.</p></li>
+<li><p>With these R technologies, I really feel I stand on the shoulders of giants.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Description'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Details'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Lessons learned'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Conclusion'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
