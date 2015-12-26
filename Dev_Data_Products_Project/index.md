@@ -1,8 +1,8 @@
 ---
 title       : Developing Data Products
 subtitle    : Course Project
-author      : Subbarao
-job         : R student
+author      : svsubbarao
+job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      #
@@ -21,6 +21,14 @@ The Shiny App I wrote displays energy consumption information:
 - water
 
 for the years 2012 to 2015.
+
+The app developed for the first part of the assignment is avalilable at:
+
+https://svsubbarao.shinyapps.io/dddproject
+
+Source code for ui.R and server.R files are available on the GitHub:
+
+https://github.com/svsubbarao/svsds/tree/master/Dev_Data_Products_Project
 
 ---
 ## Details
