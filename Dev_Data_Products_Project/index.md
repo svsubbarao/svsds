@@ -1,5 +1,6 @@
 ---
-title       : Energy Consumption
+title       : Developing Data Products
+subtitle    : Course Project
 author      : Subbarao
 job         : R student
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
@@ -9,6 +10,7 @@ widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
+
 
 ## Description
 
